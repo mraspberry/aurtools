@@ -52,3 +52,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# makepkg files
+pkg
+src
+*.tar.*
