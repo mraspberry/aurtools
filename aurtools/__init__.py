@@ -45,10 +45,8 @@ def aurdownload():
             continue
         else:
             print("Extracting {} to current directory".format(pkgname))
-        orig_fileobj = tfile.fileobj
         tfile.extractall()
         tfile.close()
-        orig_fileobj.close()
 
 def aursearch():
     args = _init_argparser()

@@ -23,8 +23,9 @@ def downloadPkg(pkgname):
         if res['Name'] == pkgname:
             url = '{base}/{path}'.format(base=_AURBASE,path=res['URLPath'])
             pkg = requests.get(url,verify=True)
-            tmp = tempfile.TemporaryFile()
+            tmp = tempfile.NamedTemporaryFile(delete=False)
+            fn = tmp.name
             tmp.write(pkg.content)
             tmp.flush()
-            tfile = tarfile.TarFile(fileobj=tmp)
+            tfile = tarfile.open(fn)
             return tfile

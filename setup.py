@@ -3,7 +3,7 @@ from setuptools import find_packages,setup
 
 setup(
         name='aurtools',
-        version='1.0',
+        version='1.0.2',
         author="Matthew Raspberry",
         author_email="nixalot@nixalot.com",
         url='https://github.com/nixalot/aurtools',
