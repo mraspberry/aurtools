@@ -1,6 +1,6 @@
 #Maintainer: nixalot <nixalot at nixalot dot com>
 pkgname=aurtools
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="Utilities for searching for and downloading packages from the Arch Linux AUR"
 arch=(any)
@@ -11,7 +11,7 @@ depends=('python' 'python-requests')
 source=(
   ${pkgname}-${pkgver}.tar.gz::https://github.com/nixalot/aurtools/archive/v${pkgver}.tar.gz
 )
-sha512sums=('f6f3b54abd5d581b6081668bda5fcc7c1394c0d1bcadf4fb02ddb4fbff9534fe8d6a3b617fff62b71e5b90a1a36c8a8f2d0beb4c53f690cb6b6f641d755242e3')
+sha512sums=('2180fa10fe418cf95c40f898b764155578e8711bc406fbbf1f00655e22718648e085ae3cc10fe18c05d20160947f15f115c73be1a0f09db812a9ec686e3beeae')
 
 package ()
 {
